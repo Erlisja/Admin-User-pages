@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f5eaea;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0c0101;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+
+
+}
+
+.nav_container {
+    grid-column: 1 / 6;
+    grid-row: 1/2;
+    background-color: #6d9fd1;
+    margin: 0px;
+    padding: 10px;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0px;
+    padding: 10px;
+}
+
+.custom-icon-size {
+    font-size: 1.3rem;
+    margin: 10px;
+    align-self: flex-end;
+}
+
+.menu {
+    grid-column: 1/2;
+    grid-row: 2/11;
+    background-color: #aed2f6;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-heading {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+    color: #0c0101;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.menu ul li {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #6d9fd1;
+    transition: background-color 20ms ease-in;
+
+}
+
+.menu ul li:hover {
+    background-color: #2e6297;
+
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    color: #0c0101;
+    text-decoration: none;
+
+}
+
+.menu ul li a:hover {
+    color: #0c0101;
+}
+
+.active {
+    background-color: #326597;
+    color: #0c0101;
+}
+
+.card {
+    grid-column: 2/6;
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-body {
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #06213c;
+    border-radius: 20px;
+    background-color: #aed2f6;
+    box-shadow: 5px 5px 5px #06213c;
+}
+
+.graph-heading {
+    text-align: flex-start;
+    padding: 10px;
+    font-size: 1.5em;
+    color: #0c0101;
+}
+
+.graph-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #06213c;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #06213c;
+}
+
+.portfolio-overview {
+    grid-column: 3/6;
+    grid-row: 3;
+    margin: 80px;
+    padding: 10px;
+    border: 2px solid #06213c;
+    border-radius: 20px;
+    background-color: #aed2f6;
+    box-shadow: 5px 5px 5px #06213c;
+    height: fit-content;
+
+}
+
+.card-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-group {
+    margin-top: 20px;
+    border: 2px solid #06213c;
+    border-radius: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px;
+
+}
