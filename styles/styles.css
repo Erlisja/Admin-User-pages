@@ -11,15 +11,20 @@ body {
     line-height: 1.5;
     color: #0c0101;
     display: grid;
-    grid-template-rows: repeat(10, 1fr);
     margin: 0px;
     padding: 0px;
     height: 100vh;
     width: 100vw;
 
-
 }
-
+.grid-wrap{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
 .nav_container {
     grid-column: 1 / 6;
     grid-row: 1/2;
@@ -121,7 +126,7 @@ body {
     color: #0c0101;
 }
 
-.graph-content {
+.graph {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,12 +136,14 @@ body {
     border: 2px solid #06213c;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #06213c;
+    height: fit-content;
+    width: fit-content;
 }
 
 .portfolio-overview {
     grid-column: 3/6;
     grid-row: 3;
-    margin: 80px;
+    margin: 0px;
     padding: 10px;
     border: 2px solid #06213c;
     border-radius: 20px;
